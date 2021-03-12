@@ -2,6 +2,7 @@
 > Quick cheatSheet to check for most used methods for Regular Expressions
 ___
 
+### Start instantiating a let function to be reused with different regex expressions: 
 ```javascript
 let re
 re = /hello/ // = regex
