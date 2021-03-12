@@ -75,7 +75,7 @@ re = /Hel{2,4}o/ // Must occur between {from, to} amount of times
 re = /Hel{2,}o/ // Must occur at least {m} times
 ```
 ---
-Parentheses () - grouping
+## Parentheses () - grouping
 ```javascript
 re = /^([0-9]x){3}$/
 ```
