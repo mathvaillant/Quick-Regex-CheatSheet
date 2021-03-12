@@ -1,6 +1,5 @@
 # Quick-Regex-CheatSheet
-Quick Regex CheatSheet
-
+> Quick cheatSheet to check for most used methods for Regular Expressions
 ___
 
 ```javascript
@@ -84,10 +83,8 @@ re = /x(?!y)/i // Match x only if not followed by y
 
 // String to match
 const str = 'Insert a string to test'
-const result = re.exec(str)
-console.log(result)
 
-// Log result
+// Log result - Simple function to test if the str matches the Regular Expression
 function reTest(re, str) {
   if (re.test(str)) {
     console.log(`${str} matched ${re.source}`)
@@ -96,5 +93,6 @@ function reTest(re, str) {
   }
 }
 
-reTest(re, str) // the last re will return: app.js:89 Insert a string to test does not match x(?!y)
+// Then fire the function
+reTest(re, str) // Will console.log => the last re will return: app.js:89 Insert a string to test does not match x(?!y)
 ```
