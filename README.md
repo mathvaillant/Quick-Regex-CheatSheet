@@ -6,7 +6,6 @@ ___
 ```javascript
 let re
 // Literal Characters
----
 re = /hello/ // = regex
 re = /hello/i // i = case insensitive
 re = /hello/g // Global search - ex: Look in a entire paragraph
@@ -103,9 +102,7 @@ re = /x(?!y)/i // Match x only if not followed by y
 ```javascript
 // String to match
 const str = 'Insert a string to test'
-```
----
-```javascript
+
 // Log result - Simple function to test if the str matches the Regular Expression
 function reTest(re, str) {
   if (re.test(str)) {
