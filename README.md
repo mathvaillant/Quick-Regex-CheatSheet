@@ -12,9 +12,9 @@ re = /hello/g // Global search - ex: Look in a entire paragraph
 
 console.log(re.source) // => Hello
 
-// METHODS
 ```
 ---
+## Methods
 ```javascript
 // exec()
 const result = re.exec('hello world')
@@ -46,8 +46,8 @@ const newString = string.replace(re, 'Hi')
 console.log(newString)
 ```
 ---
+## Metacharacter symbols
 ```javascript
-// Metacharacter symbols
 re = /^h/i // Must Start with h
 re = /world$/i // Must End with d or world
 re = /^hello$/i // Must begin and end with
@@ -57,8 +57,8 @@ re = /gra?e?y/i // Optional character
 re = /gra?e?y\?/i // Escape character
 ```
 ---
+## Brackets [] - Character Sets
 ```javascript
-// Brackets [] - Character Sets
 re = /gr[ae]y/i // Must be an a or e
 re = /[GF]ray/i // Must be an G or F
 re = /[^GF]ray/i // Match anything EXCEPT  G or F - ^ inside of [] = NOT
@@ -68,20 +68,20 @@ re = /[A-Za-z]ray/ // Match any case letter
 re = /[0-9]ray/ // Match any digit
 ```
 ---
+## Braces {} - quantifiers
 ```javascript
-// Braces {} - quantifiers
 re = /Hel{2}o/i // Must occur exactly {m} amount of times
 re = /Hel{2,4}o/ // Must occur between {from, to} amount of times
 re = /Hel{2,}o/ // Must occur at least {m} times
 ```
 ---
+Parentheses () - grouping
 ```javascript
-// Parentheses () - grouping
 re = /^([0-9]x){3}$/
 ```
 ---
+## Shorthand Characters Classes
 ```javascript
-// Shorthand Characters Classes
 re = /\w/ // Word Character - alphanumeric or _
 re = /\w+/ // + = one or more
 re = /\W/ // Non Word Character - anything BUT a letter or _
@@ -93,8 +93,8 @@ re = /\S/ // Match non-whitespace char
 re = /Hell\b/i // word boundary
 ```
 ---
+## Assertions
 ```javascript
-// Assertions
 re = /x(?=y)/i // Match x only if followed by y
 re = /x(?!y)/i // Match x only if not followed by y
 ```
